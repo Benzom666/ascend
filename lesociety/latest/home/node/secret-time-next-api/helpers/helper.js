@@ -31,7 +31,7 @@ exports.sendEmailNewSignup = (mailData) => {
             const mailOptions = {
                 from: process.env.MAIL_ID_FROM, // sender address
                 to: mailData.to ? mailData.to : process.env.MAIL_ID_TO,
-                subject: mailData.subject ? mailData.subject : "Secret Time",
+                subject: mailData.subject ? mailData.subject : "Ascend",
                 html: data,
             };
             try {
