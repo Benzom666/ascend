@@ -32,6 +32,7 @@ import useWindowSize from "utils/useWindowSize";
 import NewHomePageMainSection from "@/core/NewHomePageMainSection";
 import AccelerateToFutureOfDating from "@/core/AccelerateToFutureOfDating";
 import Loader from "@/modules/Loader/Loader";
+import AscendLogo from "@/core/AscendLogo";
 
 const style1 = {
   opacity: "1",
@@ -92,12 +93,7 @@ function HomePage({ items, isLoading }) {
         <div className="home-page-navbar">
           <nav className="navbar navbar-dark bg-#080808">
             <div className="LeSociety-Icon-White">
-              <Image
-                src={HomePageLogo}
-                alt="ascend-logo"
-                height={260}
-                width={279}
-              />
+              <AscendLogo width={260} />
             </div>
           </nav>
         </div>
