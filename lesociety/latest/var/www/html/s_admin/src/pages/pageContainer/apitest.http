@@ -1,0 +1,1 @@
+GET https://lesociety-api.onrender.com/api/v1/date HTTP/1.1

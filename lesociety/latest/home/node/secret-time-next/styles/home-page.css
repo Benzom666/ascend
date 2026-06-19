@@ -1,0 +1,1420 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+.home-page-navbar {
+  margin-left: 55px;
+  display: flex;
+  justify-content: center;
+}
+.home-page-navbar .LeSociety-Icon-White {
+  padding: 0 75px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.home-page-navbar .LeSociety-Icon-White .ls-logo {
+  width: 45px;
+  margin: 30px 20px;
+}
+.home-page-navbar .LeSociety-Icon-White .ls-text {
+  width: 229px;
+  padding: 15px 0px;
+  color: #fff;
+  margin-left: 9px;
+  margin-top: 19px;
+}
+.home-page-navbar .LeSociety-Icon-White .ls-text .leSocitey-heading {
+  margin-bottom: 2rem;
+}
+.home-page-navbar .LeSociety-Icon-White .ls-text .leSocitey-subheading {
+  font-size: 13px;
+  padding-top: 5px;
+  font-family: "Montserrat";
+}
+
+.home-main-section {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.home-main-sec-1 {
+  padding: 75px 0 50px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.home-main-sec-2 {
+  padding: 28px 0px 0px 0px;
+  font-family: "Montserrat";
+}
+
+.home-main-sec-3 {
+  padding: 20px 0 80px 0px;
+  font-family: "Montserrat";
+}
+
+.home-main-sec-4 {
+  padding: 60px 0px 26px 0px;
+  font-family: "Montserrat";
+}
+
+.main-title {
+  font-size: 33px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  line-height: 0.75;
+  letter-spacing: 6.8px;
+  line-height: 1.1;
+  text-align: right;
+}
+
+.main-content {
+  padding: 5px 0px;
+  font-size: 18px;
+}
+
+.aboutCardContent {
+  width: 390px;
+  font-family: "Montserrat";
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0px;
+}
+
+.main-content-icon {
+  width: 390px;
+  padding: 20px 25px;
+}
+
+@media only screen and (max-width: 500px) {
+  .home-main-section {
+    flex-direction: column;
+    background-position: top;
+    overflow-x: hidden !important;
+    margin-top: 0px !important;
+  }
+  .main-title {
+    padding-bottom: 25px;
+  }
+  .main-title h5 {
+    font-family: "Montserrat";
+    font-size: 30px;
+    text-align: center;
+    padding: 0 1px;
+  }
+  .main-content {
+    font-size: 16px;
+    padding: 15px 10px;
+  }
+  .main-content .main-content-icon {
+    width: 300px !important;
+    margin: auto;
+    padding: 0px !important;
+  }
+  .aboutCardContent {
+    width: 100%;
+    font-size: 15px !important;
+    margin: auto;
+    padding: 10px;
+  }
+  .main-card-side-wraper-1 img {
+    text-align: center;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: unset !important;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 769px) {
+  .home-main-section {
+    flex-direction: column;
+    background-position: top;
+  }
+  .home-main-section .main-title {
+    padding: 20px 10px;
+  }
+  .home-main-section .main-title h5 {
+    width: 328px;
+    font-family: "Montserrat";
+    font-size: 30px;
+    text-align: center;
+    padding: 0 22px;
+    margin: 0 auto;
+  }
+  .home-main-sec-1 {
+    padding: 40px 0px 50px 0px;
+  }
+  .main-card {
+    text-align: center;
+  }
+  .aboutCardContent {
+    max-width: 365px;
+    margin: 0 auto;
+    font-size: 16px !important;
+    padding: 10px 4px !important;
+  }
+  .main-content-icon {
+    width: 365px !important;
+    margin: auto !important;
+    padding: 10px 5px;
+  }
+}
+.home-footer-main {
+  font-family: "Montserrat";
+  padding: 0px;
+  border-top: none;
+  padding-bottom: 3rem;
+}
+
+.footer-icon-box {
+  margin: 10px;
+  padding: 10px 0px;
+}
+
+.footer-icon {
+  margin-left: -24px;
+}
+.footer-icon img {
+  text-align: start;
+  margin: 0 10px;
+}
+
+.footer-text-1 {
+  font-size: 16px;
+  color: #fff;
+  text-align: start;
+}
+.footer-text-1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-text-2 {
+  font-size: 16px;
+  text-align: start;
+  color: #686868;
+}
+
+@media only screen and (max-width: 769px) and (min-width: 501px) {
+  .home-footer-main {
+    padding: 0;
+  }
+  .home-footer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4.5rem;
+  }
+  .ls-logo-footer {
+    margin: 10px auto 0 auto;
+    padding: 10px 20px;
+  }
+  .footer-icon-box .footer-icon {
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  .footer-icon-box .footer-icon img {
+    text-align: center;
+    margin: 0px 10px;
+  }
+  .footer-icon-box .footer-text {
+    width: 290px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .footer-icon-box .footer-text .footer-text-1 {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home-footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+  }
+  .home-footer .footer-icon-box .footer-icon {
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  .home-footer .footer-icon-box .footer-icon img {
+    text-align: center !important;
+    margin: 0px 5px;
+  }
+  .home-footer .footer-icon-box .footer-text {
+    width: 328px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .home-footer .footer-icon-box .footer-text .footer-text-1 {
+    text-align: center;
+  }
+  .home-footer .footer-icon-box .footer-text .footer-text-2 {
+    text-align: center;
+  }
+}
+.containernavbarfooter {
+  margin-right: 4rem;
+  font-family: "Montserrat";
+}
+
+.navbarfooter-btn {
+  transition: ease-in-out;
+}
+
+#signupbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  border: #f24462;
+  background-color: #f24462;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 15px;
+  padding: 0 30px;
+  margin-left: 20px;
+}
+
+.signUpLadybtn {
+  width: 327.8px;
+  height: 44px;
+  border-radius: 15px;
+  border: #f24462;
+  background-color: #f24462;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.signup-button {
+  background-color: #f24462 !important; /* Set the background color of the button */
+  color: #fff !important; /* Set the text color of the button */
+  opacity: 1;
+}
+
+.home-background-navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.9;
+  z-index: -1;
+  background-color: #1a1a1a;
+  height: 60px;
+}
+
+.home-background-navbar-open {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.9;
+  z-index: -1;
+  background-color: #1a1a1a;
+  height: 60px;
+}
+
+@media only screen and (max-width: 769px) and (min-width: 480px) {
+  .home-background-navbar {
+    height: 80px;
+  }
+  .home-background-navbar-open {
+    height: 230px;
+  }
+  .navbarfixedmain {
+    border-radius: 22px 22px 0px 0px;
+  }
+  .containernavbarfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 5px;
+    margin-right: 0px !important;
+  }
+  .containernavbarfooter .navbarfooter-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 40px;
+  }
+  .containernavbarfooter .navbarfooter-text .navbarfooter-text-1 {
+    width: 100% !important;
+    padding: 0px 10px;
+  }
+  .containernavbarfooter .navbarfooter-text .navfooter-text-1 {
+    margin-right: 3rem;
+  }
+  .navbarfooter-btn {
+    margin: auto;
+  }
+  .navbarfooter-btn .sidebarhome {
+    padding: 10px 20px;
+  }
+  .navbarfooter-btn .signUpLadybtn {
+    height: 44px;
+    margin: 10px 0px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) and (min-width: 340px) {
+  .navbarfixedmain {
+    border-radius: 22px 22px 0px 0px;
+  }
+  .containernavbarfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 5px;
+    margin-right: 0px !important;
+  }
+  .navbarfooter-text {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 5px 3px;
+  }
+  .navbarfooter-text-1 {
+    width: 100% !important;
+    padding: 0px 10px;
+  }
+  #signupbtn {
+    padding: 0 15px !important;
+  }
+  .navbarfooter-btn .sidebarhome {
+    padding: 10px;
+  }
+  .navbarfooter-btn .signUpLadybtn {
+    height: 44px;
+    margin: 10px 0px;
+    width: 100%;
+  }
+  .navbarfooter-btn {
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .navbarfixedmain {
+    border-radius: 22px 22px 0px 0px;
+  }
+  .containernavbarfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 5px;
+    margin-right: 0px !important;
+  }
+  .containernavbarfooter #signupbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    border: #f24462;
+    background-color: #f24462;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 0px 10px !important;
+    margin-left: 20px;
+  }
+  .navbarfooter-text {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 5px 2px;
+  }
+  .navbarfooter-text-1 {
+    width: 100% !important;
+    padding: 0px 10px;
+  }
+  .navbarfooter-btn .sidebarhome {
+    padding: 10px;
+  }
+  .navbarfooter-btn .signUpLadybtn {
+    height: 44px;
+    margin: 10px 0px;
+    width: 100%;
+  }
+  .navbarfooter-btn {
+    margin: auto;
+  }
+}
+.bottom-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-box-container .bottom-box-card-1 {
+  width: 420px;
+  min-height: 250px;
+  background-image: url("../assets/img/card_1.png");
+  background-repeat: no-repeat;
+  background-size: 25rem;
+  margin-right: 6%;
+}
+.bottom-box-container .bottom-box-card-1 .card_1 {
+  margin-top: 5%;
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.9;
+}
+.bottom-box-container .bottom-box-card-1 .card_1 .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 5.24px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 14px 0px 0px 71px;
+}
+.bottom-box-container .bottom-box-card-1 .card_1 #howitworkbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0px;
+  height: 44px;
+  width: 179px;
+  background-color: #f24462;
+  border-radius: 15px;
+  text-align: center;
+  margin: 4% 36%;
+}
+.bottom-box-container .bottom-box-card-2 {
+  width: 420px;
+  min-height: 268px;
+  background-image: url("../assets/img/card_2.png");
+  background-size: 26rem;
+  background-repeat: no-repeat;
+}
+.bottom-box-container .bottom-box-card-2 .card_2 {
+  margin-top: 6.8%;
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.9;
+}
+.bottom-box-container .bottom-box-card-2 .card_2 .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 4.24px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 14px 108px 0px 11px;
+  margin: 0 auto;
+}
+.bottom-box-container .bottom-box-card-2 .card_2 #sneakPeakbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0px;
+  height: 44px;
+  width: 179px;
+  background-color: #f24462;
+  border-radius: 15px;
+  text-align: center;
+  margin: 5% 17%;
+}
+.bottom-box-container .bottom-box-card-2 .card_2 .card-app-pay {
+  color: #bcbcbc;
+  width: 255px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: normal;
+  padding: 10px 61px;
+  margin-top: -5%;
+  margin-left: 6%;
+}
+
+.already__login__member:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .animate-1 {
+    animation: 0.6s ease-in-out slide;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(150px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+}
+.bottom-Card-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -5%;
+}
+.bottom-Card-mobile .card-1 {
+  position: relative;
+  margin-left: 8.5rem;
+}
+.bottom-Card-mobile .card-1 .text-over-1 {
+  position: absolute;
+  top: 20px;
+  left: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-Card-mobile .card-1 .text-over-1 .card-title-1 .heading-1 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 5.24px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+.bottom-Card-mobile .card-1 .text-over-1 .card-btn-1 #howitworkbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 179px;
+  background-color: #f24462;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+  margin: 1rem auto;
+}
+.bottom-Card-mobile .card-2 {
+  position: relative;
+  margin-top: -7rem;
+  margin-left: -7.2rem;
+}
+.bottom-Card-mobile .card-2 .text-over-2 {
+  position: absolute;
+  bottom: 28px;
+  left: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-Card-mobile .card-2 .text-over-2 .card-title-2 .heading-2 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 5.24px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+.bottom-Card-mobile .card-2 .text-over-2 .card-btn-2 #sneakPeakbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 179px;
+  background-color: #f24462;
+  border-radius: 15px;
+  text-align: center;
+  margin: 4% 15%;
+  padding: 10px;
+}
+.bottom-Card-mobile .card-2 .text-over-2 .card-btn-2 .card-app-pay {
+  color: #bcbcbc;
+  width: 255px;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: normal;
+  padding: 0px 76px;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 340px) {
+  .home-background-navbar {
+    height: 80px;
+  }
+  .bottom-Card-mobile {
+    overflow-x: hidden !important;
+  }
+  .home-background-navbar-open {
+    height: 230px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .home-background-navbar {
+    height: 80px;
+  }
+  .home-background-navbar-open {
+    height: 230px;
+  }
+  .bottom-Card-mobile {
+    overflow-x: hidden !important;
+  }
+  .bottom-Card-mobile .card-1 {
+    margin-left: 6.5rem;
+  }
+  .bottom-Card-mobile .card-1 img {
+    width: 345px;
+  }
+  .bottom-Card-mobile .card-1 .text-over-1 {
+    top: 2px;
+    left: 3%;
+  }
+  .bottom-Card-mobile .card-1 .text-over-1 .card-title-1 .heading-1 {
+    font-size: 20px;
+  }
+  .bottom-Card-mobile .card-2 {
+    margin-left: -5rem;
+    margin-top: -5rem;
+  }
+  .bottom-Card-mobile .card-2 img {
+    width: 345px;
+    height: 345px;
+  }
+  .bottom-Card-mobile .card-2 .text-over-2 {
+    bottom: 2px;
+    left: 30%;
+  }
+  .bottom-Card-mobile .card-2 .text-over-2 .card-title-2 .heading-2 {
+    font-size: 20px;
+  }
+}
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+.main-container .heading-text {
+  font-size: 40px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  line-height: 0.75;
+  letter-spacing: 6.8px;
+  line-height: 1.1;
+  text-align: right;
+}
+.main-container .info-text {
+  width: 25rem;
+  text-align: center;
+  font-family: "Montserrat";
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0px;
+}
+.main-container .info-text-Laidies {
+  padding: 30px 40px;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.home__loader__layout {
+  height: 100vh;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  background-color: black;
+  width: 100%;
+  z-index: 99999;
+}
+
+.home__loader__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .main-container .info-text {
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 501px) {
+  .main-container {
+    grid-template-columns: repeat(1, 1fr);
+    overflow-x: hidden;
+    margin-top: -3rem;
+  }
+  .main-container .main-image {
+    max-width: 50%;
+  }
+  .main-container .heading-text {
+    font-family: "Montserrat";
+    font-size: 30px;
+    text-align: center;
+    padding: 0 1px;
+    margin: 0 8rem;
+    max-width: 100%;
+  }
+  .main-container .info-text {
+    max-width: 100%;
+    margin-bottom: 2rem;
+    padding: 8px 0px;
+  }
+}
+@media only screen and (max-width: 500px) and (min-width: 376px) {
+  .main-container {
+    grid-template-columns: repeat(1, 1fr);
+    overflow-x: hidden;
+  }
+  .main-container .main-image {
+    max-width: 80%;
+  }
+  .main-container .heading-text {
+    font-family: "Montserrat";
+    font-size: 30px;
+    text-align: center;
+    padding: 0 1px;
+    max-width: 100%;
+  }
+  .main-container .info-text {
+    font-size: 16px;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    padding: 8px 7px;
+  }
+}
+@media only screen and (max-width: 375px) and (min-width: 340px) {
+  .main-container {
+    grid-template-columns: repeat(1, 1fr);
+    overflow-x: hidden;
+  }
+  .main-container .main-image {
+    max-width: 80%;
+  }
+  .main-container .heading-text {
+    font-family: "Montserrat";
+    font-size: 25px;
+    text-align: center;
+    padding: 0 1px;
+    max-width: 100%;
+  }
+  .main-container .info-text {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    padding: 8px 23px;
+    margin: 0 auto 1rem auto;
+  }
+}
+@media only screen and (max-width: 339px) {
+  .main-container {
+    grid-template-columns: repeat(1, 1fr);
+    overflow-x: hidden;
+  }
+  .main-container .main-image {
+    max-width: 80%;
+  }
+  .main-container .heading-text {
+    font-family: "Montserrat";
+    font-size: 20px;
+    text-align: center;
+    padding: 0 7px;
+    max-width: 100%;
+  }
+  .main-container .info-text {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    padding: 8px 35px;
+    margin: 0 auto 1rem auto;
+  }
+}
+.new-home-main-container {
+  display: flex;
+  color: #fff;
+  font-family: Montserrat;
+}
+.new-home-main-container .ladies__container {
+  margin-left: 27%;
+  display: flex;
+}
+.new-home-main-container .main-image {
+  width: 300px;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.new-home-main-container .main__text__contents {
+  margin-top: 100px;
+  flex: 0.7;
+}
+.new-home-main-container .main__text__contents p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.new-home-main-container .text__container__margin {
+  margin-left: 150px;
+}
+.new-home-main-container .gender__icon {
+  margin-bottom: 20px;
+}
+.new-home-main-container .reach__your__goals {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+.new-home-main-container .reach__your__goals .faster {
+  font-weight: 700;
+}
+.new-home-main-container .gentlemen__container {
+  display: flex;
+  margin-left: 19%;
+  margin-top: 70px;
+}
+.new-home-main-container .gentlemen__container .main__text__contents {
+  flex: 0.55;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 75px;
+}
+.new-home-main-container .gentlemen__container .main__text__contents p {
+  text-align: end;
+}
+
+.accelerate__wrapper {
+  margin-top: 200px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.accelerate__wrapper h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.accelerate__wrapper .learn__more__wrapper {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.accelerate__wrapper .learn__more {
+  width: 300px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #f24462;
+  padding: 13px 0;
+  text-align: center;
+  margin: 100px 0;
+  font-family: Montserrat;
+  cursor: pointer;
+}
+.accelerate__wrapper .accelerate__container {
+  display: flex;
+  margin-top: 80px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+  font-family: Montserrat;
+  position: relative;
+}
+.accelerate__wrapper .accelerate__container .super__interested__icon {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.accelerate__wrapper .accelerate__container .super__interested__icon .super {
+  padding-left: 40px;
+  margin-bottom: -20px;
+}
+.accelerate__wrapper .accelerate__container .only__interested__icon {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+.accelerate__wrapper .accelerate__container .level2 {
+  align-self: self-end;
+  margin-bottom: 70px;
+}
+.accelerate__wrapper .accelerate__container .level1 {
+  margin-top: 50px;
+}
+.accelerate__wrapper .accelerate__container h6 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.accelerate__wrapper .accelerate__container .inerested__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.accelerate__wrapper .accelerate__container .progress__text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.accelerate__wrapper .accelerate__container .line__progress {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: -5px;
+}
+.accelerate__wrapper .accelerate__container .image__progress1 {
+  position: absolute;
+  bottom: 6%;
+  left: 0;
+  width: 32%;
+  height: 2px;
+  background-color: #f24462;
+  transform: rotate(180deg);
+}
+.accelerate__wrapper .accelerate__container .image__progress1 .diagonal-line {
+  width: 280px;
+  background-color: #f24462;
+  height: 2px;
+  position: absolute;
+  transform-origin: 0.2% 60%;
+  transform: rotate(130.5deg) scaleY(-1);
+}
+.accelerate__wrapper .accelerate__container .image__progress1 .progress__circle {
+  position: absolute;
+  right: 0;
+  top: -170%;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #f24462;
+}
+.accelerate__wrapper .accelerate__container .image__progress2 {
+  position: absolute;
+  top: 42%;
+  right: 0;
+  width: 40.5%;
+  height: 2px;
+  background-color: white;
+}
+.accelerate__wrapper .accelerate__container .image__progress2 .diagonal-line {
+  width: 200px;
+  height: 2px;
+  background-color: white; /* You can choose your preferred line color */
+  position: absolute;
+  transform-origin: 0.2% 60%;
+  transform: rotate(132deg);
+}
+.accelerate__wrapper .accelerate__container .image__progress2 .progress__circle {
+  position: absolute;
+  right: 0;
+  top: -170%;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: white;
+}
+.accelerate__wrapper .line-container {
+  margin-top: 20px;
+}
+.accelerate__wrapper .accelerate-iphone-image {
+  width: 630px;
+  height: 830px;
+  margin-left: -80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.accelerate__wrapper .accelerate__future__dating__icon {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.accelerate__wrapper .accelerate__future__dating__icon span {
+  margin-right: 10px;
+}
+
+.progress__line__wrapper {
+  display: flex;
+  margin: 20px 0;
+}
+.progress__line__wrapper .progress-line {
+  width: 68%;
+  height: 5px;
+  background: linear-gradient(90deg, #1712ff, #ff007a);
+  position: relative;
+  border-radius: 2.5px;
+}
+.progress__line__wrapper .progress__line__black {
+  width: 27%;
+  height: 5px;
+  background: linear-gradient(90deg, #303030);
+  border-radius: 0 2.5px 2.5px 0;
+}
+
+@media only screen and (min-width: 1580px) {
+  .image__progress1 .diagonal-line {
+    width: 300px !important;
+    transform: rotate(135deg) scaleY(-1) !important;
+  }
+}
+@media only screen and (max-width: 1366px) and (min-width: 769px) {
+  .new-home-main-container {
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .new-home-main-container .ladies__container {
+    margin-left: 0;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .new-home-main-container .text__container__margin {
+    margin-left: 50px;
+  }
+  .new-home-main-container .gentlemen__container {
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  .new-home-main-container .gentlemen__container .main__text__contents {
+    margin-right: 40px;
+    margin-top: 10px;
+  }
+  .new-home-main-container .gentlemen__container .reach__your__goals {
+    text-align: end;
+  }
+  .accelerate__wrapper {
+    margin-top: 80px !important;
+  }
+  .accelerate__wrapper .accelerate__future__dating__icon {
+    flex-direction: row;
+  }
+  .accelerate__wrapper .accelerate__container {
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+    width: 320px;
+  }
+  .accelerate__wrapper .accelerate__container .accelerate-iphone-image {
+    width: 320px;
+    height: 490px;
+    margin-left: 0;
+  }
+  .accelerate__wrapper .accelerate__container .super__interested__icon {
+    margin-top: 10px;
+  }
+  .accelerate__wrapper .accelerate__container .accelerate-iphone-image__wrapper {
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .accelerate__wrapper .accelerate__container .image__progress1 {
+    bottom: 320px;
+    left: -30px;
+    transform: rotate(90deg);
+    width: 140px;
+  }
+  .accelerate__wrapper .accelerate__container .image__progress1 .diagonal-line {
+    transform: rotate(221deg);
+    width: 135px;
+    top: 0px;
+    left: 1px;
+  }
+  .accelerate__wrapper .accelerate__container .image__progress2 {
+    top: 395px;
+    transform: rotate(270deg);
+    right: -30px;
+  }
+  .accelerate__wrapper .accelerate__container .image__progress2 .diagonal-line {
+    width: 195px;
+    height: 2px;
+    background-color: white; /* You can choose your preferred line color */
+    position: absolute;
+    transform-origin: 0.2% 60%;
+    transform: rotate(218deg);
+  }
+  .accelerate__wrapper .accelerate__container .level2 {
+    margin-top: 0px;
+    margin-bottom: 0;
+    order: 2;
+    align-self: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .accelerate__wrapper .accelerate__container .level1 {
+    margin-top: 40px;
+  }
+  .accelerate__wrapper .accelerate__container .super__interested__icon .super {
+    padding-left: 0;
+  }
+  .accelerate__wrapper .accelerate__container .line__progress span {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 320px;
+  }
+  .accelerate__wrapper .accelerate__future__dating__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .accelerate__wrapper .accelerate__future__dating__icon span {
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 341px) {
+  .home-page-navbar {
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .new-home-main-container {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+  }
+  .new-home-main-container .ladies__container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .new-home-main-container .text__container__margin {
+    margin-left: 0;
+  }
+  .new-home-main-container .main__text__contents {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .new-home-main-container .main__text__contents p {
+    font-size: 16px;
+  }
+  .new-home-main-container .gentlemen__container {
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .new-home-main-container .gentlemen__container .main__text__contents {
+    order: 1;
+    text-align: center;
+    align-items: center;
+    margin-right: 0px;
+  }
+  .new-home-main-container .gentlemen__container .main__text__contents p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .accelerate__wrapper {
+    margin-top: 80px !important;
+  }
+  .accelerate__wrapper .accelerate__future__dating__icon {
+    flex-direction: column;
+  }
+  .accelerate__wrapper .accelerate__container {
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+    width: 320px;
+  }
+  .accelerate__wrapper .accelerate__container .accelerate-iphone-image {
+    width: 320px;
+    height: 490px;
+    margin-left: 0;
+  }
+  .accelerate__wrapper .accelerate__container .super__interested__icon {
+    margin-top: 10px;
+  }
+  .accelerate__wrapper .accelerate__container .accelerate-iphone-image__wrapper {
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .accelerate__wrapper .accelerate__container .image__progress1 {
+    bottom: 320px;
+    left: -30px;
+    transform: rotate(90deg);
+    width: 140px;
+  }
+  .accelerate__wrapper .accelerate__container .image__progress1 .diagonal-line {
+    transform: rotate(221deg);
+    width: 135px;
+    top: 0px;
+    left: 1px;
+  }
+  .accelerate__wrapper .accelerate__container .image__progress2 {
+    top: 395px;
+    transform: rotate(270deg);
+    right: -30px;
+  }
+  .accelerate__wrapper .accelerate__container .image__progress2 .diagonal-line {
+    width: 195px;
+    height: 2px;
+    background-color: white; /* You can choose your preferred line color */
+    position: absolute;
+    transform-origin: 0.2% 60%;
+    transform: rotate(218deg);
+  }
+  .accelerate__wrapper .accelerate__container .level2 {
+    margin-top: 0px;
+    margin-bottom: 0;
+    order: 2;
+    align-self: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .accelerate__wrapper .accelerate__container .level1 {
+    margin-top: 40px;
+  }
+  .accelerate__wrapper .accelerate__container .super__interested__icon .super {
+    padding-left: 0;
+  }
+  .accelerate__wrapper .accelerate__container .line__progress span {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 320px;
+  }
+  .accelerate__wrapper .accelerate__future__dating__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .accelerate__wrapper .accelerate__future__dating__icon span {
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .home-page-navbar {
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+  }
+  .new-home-main-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+  .new-home-main-container .ladies__container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+  .new-home-main-container .text__container__margin {
+    margin-left: 0;
+  }
+  .new-home-main-container .main__text__contents {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .new-home-main-container .main__text__contents p {
+    font-size: 16px;
+  }
+  .new-home-main-container .gentlemen__container {
+    margin-left: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .new-home-main-container .gentlemen__container .main__text__contents {
+    order: 1;
+    text-align: center;
+    align-items: center;
+    margin-right: 0px;
+  }
+  .new-home-main-container .gentlemen__container .main__text__contents p {
+    text-align: center;
+  }
+  .accelerate__wrapper {
+    margin-top: 80px !important;
+  }
+  .accelerate__wrapper .accelerate__future__dating__icon {
+    flex-direction: column;
+  }
+  .accelerate__wrapper .accelerate__container {
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+    width: 290px;
+  }
+  .accelerate__wrapper .accelerate__container .accelerate-iphone-image {
+    width: 290px;
+    height: 490px;
+    margin-left: 0;
+  }
+  .accelerate__wrapper .accelerate__container .super__interested__icon {
+    margin-top: 10px;
+  }
+  .accelerate__wrapper .accelerate__container .accelerate-iphone-image__wrapper {
+    order: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .accelerate__wrapper .accelerate__container .image__progress1 {
+    bottom: 340px;
+    left: -25px;
+    transform: rotate(90deg);
+    width: 110px;
+  }
+  .accelerate__wrapper .accelerate__container .image__progress1 .diagonal-line {
+    transform: rotate(221deg);
+    width: 135px;
+    top: 0px;
+    left: 1px;
+  }
+  .accelerate__wrapper .accelerate__container .image__progress2 {
+    top: 422px;
+    transform: rotate(270deg);
+    right: -35px;
+  }
+  .accelerate__wrapper .accelerate__container .image__progress2 .diagonal-line {
+    width: 195px;
+    height: 2px;
+    background-color: white; /* You can choose your preferred line color */
+    position: absolute;
+    transform-origin: 0.2% 60%;
+    transform: rotate(218deg);
+  }
+  .accelerate__wrapper .accelerate__container .level2 {
+    margin-top: 0px;
+    margin-bottom: 0;
+    order: 2;
+    align-self: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .accelerate__wrapper .accelerate__container .level1 {
+    margin-top: 40px;
+  }
+  .accelerate__wrapper .accelerate__container .super__interested__icon .super {
+    padding-left: 0;
+  }
+  .accelerate__wrapper .accelerate__container .line__progress span {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 320px;
+  }
+  .accelerate__wrapper .accelerate__future__dating__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .accelerate__wrapper .accelerate__future__dating__icon span {
+    margin-right: 10px;
+  }
+}/*# sourceMappingURL=home-page.css.map */

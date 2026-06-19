@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="303.475" height="309.622" viewBox="0 0 303.475 309.622">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.577" y1="0.787" x2="0.165" y2="0.067" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f24462"/>
+      <stop offset="1" stop-color="#2a616a"/>
+    </linearGradient>
+  </defs>
+  <path id="Fifth_Blob" data-name="Fifth Blob" d="M176.822-6.683c-56.477-9.368-79.379,45.8-79.379,96.965s6,150.435,57.169,150.435S283.578,141.452,283.578,90.282,233.3,2.685,176.822-6.683Z" transform="translate(-68.469 191.879) rotate(-41)" fill="url(#linear-gradient)"/>
+</svg>

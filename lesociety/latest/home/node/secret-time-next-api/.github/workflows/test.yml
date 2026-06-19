@@ -1,0 +1,57 @@
+name: Test Suite
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x, 20.x]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: lesociety/latest/home/node/secret-time-next-api/package-lock.json
+
+    - name: Install dependencies
+      working-directory: lesociety/latest/home/node/secret-time-next-api
+      run: npm ci
+
+    - name: Run linter
+      working-directory: lesociety/latest/home/node/secret-time-next-api
+      run: npm run lint --if-present
+
+    - name: Run tests
+      working-directory: lesociety/latest/home/node/secret-time-next-api
+      run: npm run test:ci
+      env:
+        NODE_ENV: test
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./lesociety/latest/home/node/secret-time-next-api/coverage/lcov.info
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: false
+
+    - name: Archive test results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results-${{ matrix.node-version }}
+        path: |
+          lesociety/latest/home/node/secret-time-next-api/coverage/
+          lesociety/latest/home/node/secret-time-next-api/test-results/

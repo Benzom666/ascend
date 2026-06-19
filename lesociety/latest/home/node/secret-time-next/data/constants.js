@@ -1,0 +1,2 @@
+export const PROFILE_UNVERIFIED = "We're sorry, but we've had to deny you access to Ascend because your profile didn't meet our standards"
+export const EDIT_PROFILE_DONE = "We've received your change request for images or your profile description or tagline. Your latest information is now under review and will go live upon approval. Please make sure your most recent changes abide by our company's policies. A review of your most recent changes can take up to 24 hours. Thank you for your patience!"

@@ -1,0 +1,114 @@
+/* Sidebar Token Circles */
+.sidebar_wrap .sidebar-plan-card .sidebar-plan-icons {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+  width: min(244px, 100%) !important;
+  max-width: min(244px, 100%) !important;
+  gap: 18px !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  margin: 20px 0 16px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.sidebar_wrap .sidebar-plan-card .token-circle {
+  flex: 0 0 auto !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar_wrap .sidebar-plan-card .sidebar-plan-icons {
+    width: min(224px, 100%) !important;
+    max-width: min(224px, 100%) !important;
+    gap: 14px !important;
+    padding: 0 !important;
+  }
+}
+
+.token-circle {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 8px;
+}
+
+.token-label {
+  font-family: "Conv_Helvetica", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #888888;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.token-circle-inner {
+  position: relative !important;
+  width: 90px !important;
+  height: 90px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.token-circle-inner img {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  top: 0 !important;
+  left: 0 !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: none !important;
+}
+
+.token-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.token-ring-bg {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 6;
+}
+
+.token-ring-progress {
+  fill: none;
+  stroke: url(#token-gradient);
+  stroke-width: 6;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.3s ease;
+}
+
+.token-ring-progress.super {
+  stroke: url(#token-gradient-super);
+}
+
+.token-value {
+  font-family: "Conv_Helvetica", "Helvetica", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  position: relative !important;
+  z-index: 10;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  line-height: 1;
+}
+
+.token-circle.locked .token-value {
+  font-size: 14px;
+  color: #666666;
+}
+
+/* Gradients for token rings */
+.sidebar-plan-card svg defs {
+  position: absolute;
+}
+
+/* Add to global styles or inline SVG */

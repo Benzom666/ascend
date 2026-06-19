@@ -1,0 +1,76 @@
+.super__interested__star {
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 30px;
+  border: 1px solid #d8d8d8;
+  background: #1e2023;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px !important;
+}
+.super__interested__star.active {
+  border-radius: 30px;
+  border: 1px solid #f24462;
+  background: #151515;
+}
+
+.is__super__interested__message__input {
+  padding-left: 45px !important;
+  padding-right: 65px !important;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.message__modal__input {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 65px !important;
+  padding-left: 20px;
+}
+
+.user__detail__star {
+  display: flex;
+  align-items: end;
+}
+.user__detail__star .super__interested__username {
+  margin-left: 5px;
+}
+.user__detail__star span {
+  color: white !important;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.058px;
+}
+
+.request__message__super__text {
+  display: flex;
+  flex-direction: column;
+}
+.request__message__super__text .super {
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+
+.superinterested__icon__div {
+  position: relative;
+}
+.superinterested__icon__div .superinterested__icon {
+  position: absolute;
+  top: -6.4%;
+  left: 40%;
+  z-index: 10;
+}
+
+.superinterested__margin {
+  margin-top: 18px !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .super__interested__star {
+    margin-bottom: 10px !important;
+  }
+}/*# sourceMappingURL=super-interested.css.map */

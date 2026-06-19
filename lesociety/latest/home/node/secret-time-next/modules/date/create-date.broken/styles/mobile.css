@@ -1,0 +1,451 @@
+/* ============================================
+   CREATE DATE FLOW - MOBILE STYLES
+   ============================================ */
+
+/* Base Mobile Styles */
+.create-date-mobile {
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+}
+
+.create-date-mobile .create-date-content {
+  padding-bottom: 90px; /* Space for bottom navigation */
+}
+
+.create-date-mobile .create-date-shell {
+  background: #0b0b0b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+.create-date-mobile .create-date-intro {
+  text-align: center;
+  padding: 18px 0 10px;
+}
+
+.create-date-mobile .create-date-intro h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.create-date-mobile .create-date-intro .intro-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 8px;
+}
+
+.create-date-mobile .create-date-intro .intro-note {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* ============================================
+   MOBILE EXPERIENCE SECTION (Step 1)
+   ============================================ */
+.mobile-experience-container {
+  padding: 0 16px;
+}
+
+.mobile-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.mobile-experience-grid.single {
+  grid-template-columns: 1fr;
+}
+
+.mobile-experience-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  background: #0f0f0f;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 180px;
+}
+
+.mobile-experience-card:active {
+  transform: scale(0.98);
+}
+
+.mobile-experience-card.is-selected {
+  border-color: #f24462;
+  box-shadow: 0 0 0 1px rgba(242, 68, 98, 0.35);
+}
+
+.mobile-experience-card .experience-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.mobile-experience-card .experience-card-image {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+}
+
+.mobile-experience-card .experience-card-content {
+  padding: 12px 10px;
+}
+
+.mobile-experience-card .experience-card-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.mobile-experience-card .experience-card-desc {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.3;
+}
+
+/* ============================================
+   MOBILE CATEGORY SECTION (Step 2)
+   ============================================ */
+.mobile-category-container {
+  padding: 0 20px;
+}
+
+.mobile-price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.mobile-price-card {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mobile-price-card:active {
+  transform: scale(0.95);
+}
+
+.mobile-price-card.is-selected {
+  border-color: #f24462;
+  box-shadow: 0 0 0 1px rgba(242, 68, 98, 0.35);
+  color: #f24462;
+}
+
+.create-date-mobile .aspiration-select {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  background: #0f0f0f;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  margin-bottom: 14px;
+  appearance: none;
+}
+
+.create-date-mobile .aspiration-select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.create-date-mobile .bottom-mobile .secret-input.next-prev {
+  justify-content: center;
+  gap: 12px;
+}
+
+.create-date-mobile .bottom-mobile .secret-input.next-prev .next,
+.create-date-mobile .bottom-mobile .secret-input.next-prev .edit {
+  flex: 1;
+  max-width: 210px;
+}
+
+.create-date-mobile .bottom-mobile .secret-input.next-prev .next:only-child {
+  max-width: 420px;
+}
+
+/* ============================================
+   MOBILE DURATION SECTION (Step 3)
+   ============================================ */
+.mobile-duration-container {
+  padding: 0 20px;
+}
+
+.mobile-duration-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.mobile-duration-card {
+  padding: 16px 18px;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mobile-duration-card:active {
+  transform: scale(0.98);
+}
+
+.mobile-duration-card.is-selected {
+  border-color: #f24462;
+  box-shadow: 0 0 0 1px rgba(242, 68, 98, 0.35);
+}
+
+.mobile-duration-card .duration-card-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.mobile-duration-card .duration-card-desc {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ============================================
+   MOBILE DESCRIPTION SECTION (Step 4)
+   ============================================ */
+.mobile-description-container {
+  padding: 0 20px;
+}
+
+.mobile-description-textarea {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  resize: vertical;
+  min-height: 200px;
+  font-family: inherit;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.mobile-description-textarea:focus {
+  outline: none;
+  border-color: #f24462;
+}
+
+.mobile-description-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.mobile-character-counter {
+  margin-top: 8px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: right;
+}
+
+.mobile-character-counter .text-warning {
+  color: #ff6b6b;
+}
+
+.mobile-warning-hint {
+  margin-top: 16px;
+  padding: 12px;
+  background: rgba(242, 68, 98, 0.12);
+  border-left: 4px solid #f24462;
+  border-radius: 4px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.mobile-description-buttons {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.mobile-description-buttons .draft-btn {
+  flex: 1;
+  padding: 16px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mobile-description-buttons .next {
+  flex: 1;
+}
+
+/* ============================================
+   MOBILE PREVIEW SECTION (Step 5)
+   ============================================ */
+.mobile-preview-container {
+  padding: 0 10px;
+}
+
+.mobile-preview-buttons {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.mobile-preview-buttons .edit {
+  flex: 1;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #fff;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  max-width: none;
+}
+
+.mobile-preview-buttons .next {
+  flex: 1;
+  background: #f24462;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ============================================
+   MOBILE BOTTOM NAVIGATION
+   ============================================ */
+.create-date-mobile .bottom-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0b0b0b;
+  padding: 12px 16px 16px;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  z-index: 100;
+}
+
+.create-date-mobile .bottom-mobile .secret-input {
+  display: flex;
+  gap: 12px;
+}
+
+.create-date-mobile .bottom-mobile button.next {
+  flex: 1;
+  padding: 14px 16px;
+  background: #f24462;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.create-date-mobile .bottom-mobile button.next:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.create-date-mobile .bottom-mobile button.next:active {
+  transform: scale(0.98);
+}
+
+/* ============================================
+   MOBILE EXPERIENCE GROUP TITLES
+   ============================================ */
+.experience-group {
+  margin-bottom: 24px;
+}
+
+.experience-group-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 12px;
+  padding-left: 4px;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE ADJUSTMENTS
+   ============================================ */
+@media (max-width: 375px) {
+  .mobile-price-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mobile-experience-card {
+    min-height: 170px;
+  }
+
+  .mobile-experience-card .experience-card-image {
+    height: 120px;
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.text-warning {
+  color: #ff6b6b;
+}
+
+.validation-hint {
+  color: #ff6b6b;
+  font-size: 12px;
+}
+
+.spin-loader-button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

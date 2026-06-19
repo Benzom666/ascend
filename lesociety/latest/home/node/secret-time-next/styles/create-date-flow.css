@@ -1,0 +1,538 @@
+.create-date-route-active,
+.create-date-route-active body {
+  background: #000;
+}
+
+.create-date-route-active #__next {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #000;
+}
+
+.create-date-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-date-content {
+  flex: 1;
+  min-height: 0;
+  padding: 24px 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: calc(120px + env(safe-area-inset-bottom, 0px));
+}
+
+.create-date-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #000;
+}
+
+.create-date-header .header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 16px;
+}
+
+.create-date-header .header-btn {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-date-header .header-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ccc;
+  letter-spacing: 1px;
+}
+
+.create-date-header .progress-bar-container {
+  height: 20px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.create-date-header .progress-bar-wrapper {
+  position: relative;
+  width: 100%;
+  height: 5px;
+}
+
+.create-date-header .progress-line {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #979797 0%, rgba(23, 18, 255, 0.4) 100%);
+  opacity: 0.3;
+  border-radius: 10px;
+}
+
+.create-date-header .progress-line-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #1712ff 0%, #f24462 48.87%, #ff007a 100%);
+  box-shadow: 0 0 10px rgba(255, 0, 122, 0.5);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.create-date-header .tabs-container {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.create-date-header .tabs-container::-webkit-scrollbar {
+  display: none;
+}
+
+.create-date-header .tab {
+  flex: 1;
+  padding: 14px 8px;
+  background: transparent;
+  border: 0;
+  color: #666;
+  font-size: 13px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.create-date-header .tab-active {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.create-date-page .page-title,
+.create-date-page .success-title {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #fff;
+  text-align: center;
+  line-height: 1.15;
+  margin-top: 0;
+}
+
+.create-date-page .page-subtitle,
+.create-date-page .success-subtitle {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #ccc;
+  text-align: center;
+}
+
+.create-date-page .bottom-button-container {
+  position: sticky;
+  bottom: 0;
+  z-index: 30;
+  padding: 16px;
+  padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 24%, #000 100%);
+}
+
+.create-date-page .next-button,
+.create-date-page .btn-primary,
+.create-date-page .btn-secondary,
+.create-date-page .toggle-btn,
+.create-date-page .duration-card,
+.create-date-page .date-type-card,
+.create-date-page .location-input,
+.create-date-page .city-input,
+.create-date-page textarea,
+.create-date-page input,
+.create-date-page select {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.create-date-page .next-button,
+.create-date-page .btn-primary,
+.create-date-page .btn-secondary {
+  width: 100%;
+  min-height: 56px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+}
+
+.create-date-page .next-button,
+.create-date-page .btn-primary {
+  background: linear-gradient(90deg, #1712ff 0%, #f24462 52%, #ff007a 100%);
+  color: #fff;
+}
+
+.create-date-page .btn-secondary {
+  background: #111;
+  border-color: #333;
+  color: #fff;
+}
+
+.create-date-page .next-button.disabled,
+.create-date-page .next-button:disabled {
+  opacity: 0.55;
+}
+
+.create-date-page .duration-card,
+.create-date-page .date-type-card,
+.create-date-page .form-section,
+.create-date-page .success-date-card,
+.create-date-page .tips-section {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.create-date-page .location-input,
+.create-date-page .city-input,
+.create-date-page textarea,
+.create-date-page input,
+.create-date-page select {
+  background: #000;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.create-date-page .location-input::placeholder,
+.create-date-page .city-input::placeholder,
+.create-date-page textarea::placeholder,
+.create-date-page input::placeholder {
+  color: #666;
+}
+
+.create-date-page .button-label-hidden {
+  opacity: 0;
+}
+
+.create-date-page .button-spinner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-date-page .spin-loader-button {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  animation: createDateSpin 0.8s linear infinite;
+}
+
+/* ============================================
+   EXPERIENCE / DATE TYPE CARD STYLING
+   ============================================ */
+
+.create-date-page .date-type-card,
+.create-date-page .experience-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  appearance: none;
+  padding: 0;
+  text-align: left;
+}
+
+.create-date-page .date-type-card:hover,
+.create-date-page .experience-card:hover {
+  border-color: #333333;
+}
+
+.create-date-page .date-type-card.selected,
+.create-date-page .date-type-card.is-selected,
+.create-date-page .experience-card.is-selected {
+  border: 1px solid transparent;
+  box-shadow: 0 6px 14px rgba(242, 68, 98, 0.12);
+}
+
+.create-date-page .date-type-card.selected::before,
+.create-date-page .date-type-card.selected::after,
+.create-date-page .experience-card.is-selected::before,
+.create-date-page .experience-card.is-selected::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(242, 68, 98, 0) 0%, rgba(242, 68, 98, 0.9) 50%, rgba(242, 68, 98, 0) 100%);
+  opacity: 0.9;
+  z-index: 3;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.create-date-page .date-type-card.selected::before,
+.create-date-page .experience-card.is-selected::before {
+  top: 0;
+}
+
+.create-date-page .date-type-card.selected::after,
+.create-date-page .experience-card.is-selected::after {
+  bottom: 0;
+}
+
+.create-date-page .card-image-wrapper,
+.create-date-page .experience-card-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: #0A0A0A;
+  overflow: hidden;
+}
+
+.create-date-page .card-image,
+.create-date-page .experience-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.create-date-page .card-image--MorningBeverage,
+.create-date-page .image--MorningBeverage {
+  object-position: center 20%;
+}
+
+.create-date-page .card-image--BottlesDance,
+.create-date-page .image--BottlesDance {
+  object-position: center 18%;
+}
+
+.create-date-page .card-image--TakeClass,
+.create-date-page .image--TakeClass {
+  object-position: center 18%;
+}
+
+.create-date-page .image-gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.6) 35%, transparent 100%);
+  pointer-events: none;
+}
+
+.create-date-page .price-badge,
+.create-date-page .experience-badge {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  z-index: 2;
+  backdrop-filter: blur(8px);
+}
+
+.create-date-page .card-content,
+.create-date-page .experience-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 102px;
+  padding: 7px 10px 10px;
+  text-align: left;
+  background: #000000;
+}
+
+.create-date-page .card-label,
+.create-date-page .experience-card-title {
+  min-height: 2.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 3px;
+  letter-spacing: 0.24em;
+  text-align: center;
+  text-wrap: balance;
+  line-height: 1.35;
+}
+
+.create-date-page .card-label-tight {
+  letter-spacing: 0.2em;
+}
+
+.create-date-page .card-description,
+.create-date-page .experience-card-desc {
+  flex: 1;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #888888;
+  line-height: 1.4;
+}
+
+.create-date-page .section-header {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 24px 0 16px 0;
+}
+
+.create-date-page .date-type-grid,
+.create-date-page .experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.create-date-page .helper-text {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 8px 0 80px 0;
+  line-height: 1.5;
+}
+
+/* ============================================
+   EXPERIENCE CARD DESKTOP STYLES
+   ============================================ */
+@media (min-width: 768px) {
+  .create-date-page .card-image-wrapper,
+  .create-date-page .experience-card-image {
+    aspect-ratio: 16 / 10;
+  }
+
+  .create-date-page .card-image--MorningBeverage {
+    object-position: center 24%;
+  }
+
+  .create-date-page .card-image--BottlesDance {
+    object-position: center 14%;
+  }
+
+  .create-date-page .card-image--TakeClass {
+    object-position: center 14%;
+  }
+
+  .create-date-page .card-content,
+  .create-date-page .experience-card-content {
+    min-height: 116px;
+    padding: 8px 12px 12px;
+  }
+
+  .create-date-page .card-label,
+  .create-date-page .experience-card-title {
+    min-height: 2.9em;
+    font-size: 16px;
+    letter-spacing: 0.26em;
+  }
+
+  .create-date-page .card-label-tight {
+    letter-spacing: 0.22em;
+  }
+
+  .create-date-page .card-description,
+  .create-date-page .experience-card-desc {
+    font-size: 12px;
+  }
+
+  .create-date-page .helper-text {
+    font-size: 14px;
+    margin: 18px 0 120px 0;
+  }
+
+  .create-date-page .section-header {
+    font-size: 20px;
+    margin: 32px 0 20px 0;
+  }
+
+  .create-date-page .date-type-grid,
+  .create-date-page .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+/* ============================================
+   EXPERIENCE CARD MOBILE ADJUSTMENTS
+   ============================================ */
+@media (max-width: 767px) {
+  .create-date-page .date-type-grid,
+  .create-date-page .experience-grid {
+    gap: 8px;
+  }
+
+  .create-date-page .card-image-wrapper,
+  .create-date-page .experience-card-image {
+    aspect-ratio: 16 / 10;
+  }
+
+  .create-date-page .card-image--MorningBeverage {
+    object-position: center 16%;
+  }
+
+  .create-date-page .card-image--BottlesDance {
+    object-position: center 12%;
+  }
+
+  .create-date-page .card-image--TakeClass {
+    object-position: center 18%;
+  }
+
+  .create-date-page .card-content,
+  .create-date-page .experience-card-content {
+    min-height: 110px;
+    padding: 6px 9px 9px;
+  }
+
+  .create-date-page .card-label,
+  .create-date-page .experience-card-title {
+    min-height: 2.8em;
+    font-size: 14px;
+    letter-spacing: 0.22em;
+  }
+
+  .create-date-page .card-label-tight {
+    letter-spacing: 0.18em;
+  }
+
+  .create-date-page .card-description,
+  .create-date-page .experience-card-desc {
+    font-size: 10.5px;
+  }
+}
+
+@keyframes createDateSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}

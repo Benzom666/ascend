@@ -1,0 +1,134 @@
+/* Premium toast shell — overrides default Toastify + legacy SCSS.
+   Imported last in _app.js so these rules win over main.scss / ReactToastify. */
+body .Toastify__toast-container .Toastify__toast {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.Toastify__toast-container--top-center {
+  top: max(12px, env(safe-area-inset-top, 0px)) !important;
+  width: calc(100% - 32px) !important;
+  max-width: 420px !important;
+  padding: 0 16px !important;
+}
+
+.Toastify__toast-container--top-center .Toastify__toast {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 auto 10px !important;
+  min-height: 0 !important;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+}
+
+.Toastify__toast-body {
+  padding: 0 !important;
+}
+
+@keyframes le-toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(-14px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes le-toast-shimmer {
+  0% {
+    transform: translateX(-100%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-12deg);
+  }
+}
+
+.le-toast {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 14px;
+  padding: 14px 16px;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  -webkit-tap-highlight-color: transparent;
+  animation: le-toast-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  background: linear-gradient(
+    135deg,
+    rgba(28, 30, 38, 0.92) 0%,
+    rgba(14, 15, 20, 0.94) 100%
+  );
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  backdrop-filter: blur(20px) saturate(160%);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.le-toast--error {
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(242, 68, 98, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.le-toast--success {
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(72, 199, 116, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.le-toast__sheen {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.06) 45%,
+    transparent 70%
+  );
+  animation: le-toast-shimmer 1.25s ease-out 1;
+}
+
+.le-toast__icon {
+  flex-shrink: 0;
+  width: 8px;
+  margin-top: 5px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(120, 200, 255, 0.9);
+  box-shadow: 0 0 12px rgba(120, 200, 255, 0.5);
+}
+
+.le-toast__icon[data-state="error"] {
+  background: #f24462;
+  box-shadow: 0 0 14px rgba(242, 68, 98, 0.55);
+}
+
+.le-toast__icon[data-state="ok"] {
+  background: #48c774;
+  box-shadow: 0 0 14px rgba(72, 199, 116, 0.45);
+}
+
+.le-toast__text {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,42 @@
+{
+  "name": "lesociety-api-testing-dependencies",
+  "description": "Testing dependencies to add to package.json",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "@types/jest": "^29.5.5",
+    "mongodb-memory-server": "^9.1.1",
+    "faker": "^5.5.3",
+    "@faker-js/faker": "^8.3.1"
+  },
+  "scripts": {
+    "test": "jest --coverage --verbose",
+    "test:watch": "jest --watch",
+    "test:unit": "jest --testPathPattern=tests/unit",
+    "test:integration": "jest --testPathPattern=tests/integration",
+    "test:ci": "jest --ci --coverage --maxWorkers=2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "controllers/**/*.js",
+      "services/**/*.js",
+      "lib/**/*.js",
+      "middleware/**/*.js",
+      "!**/*.test.js",
+      "!**/node_modules/**"
+    ],
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
+      }
+    }
+  }
+}

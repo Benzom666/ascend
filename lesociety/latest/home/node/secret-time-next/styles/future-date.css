@@ -1,0 +1,298 @@
+.future-dates-main {
+  font-family: "Montserrat";
+}
+.future-dates-main .future-date-navbar {
+  margin-left: 55px;
+}
+.future-dates-main .future-date-navbar .LeSociety-Icon-White {
+  padding: 30px 75px;
+}
+.future-dates-main .future-header-main {
+  margin: 3rem auto;
+}
+.future-dates-main .future-header-main .futuredate-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.future-dates-main .future-header-main .futuredate-header .heading-title {
+  color: "#fff";
+  font-size: 30px;
+  letter-spacing: 0.02px;
+  line-height: normal;
+}
+.future-dates-main .future-header-main .futuredate-header .futureDatingContent {
+  width: 767px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.16;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  padding: 35px 75px;
+}
+.future-dates-main .future-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+}
+.future-dates-main .future-main-content .main-content-headig-1 {
+  text-align: -webkit-right;
+}
+.future-dates-main .future-main-content .main-content-headig-1 h3 {
+  width: 462px;
+  padding: 0px 21px;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 38px;
+}
+.future-dates-main .future-main-content .main-content-headig-1 h3 span {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.future-dates-main .future-main-content .main-content-headig-1 p {
+  width: 478px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.16;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.future-dates-main .future-main-content .main-content-image-text .main-content-headig-2 .futureDates-content-over-img {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3.1px;
+  line-height: normal;
+  padding: 15px 0px;
+  text-transform: uppercase;
+}
+.future-dates-main .future-main-content .main-content-image-text .main-content-headig-2 .main-imagefuture {
+  width: 320px;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 22px;
+  border: 2px solid #cbfaff;
+  padding: 20px 0px;
+  margin: auto;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  opacity: 0.5;
+}
+.future-dates-main .future-main-content .main-content-image-text .main-content-headig-2 .main-imagefuture img {
+  width: 280px;
+}
+.future-dates-main .test {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 769px) and (min-width: 481px) {
+  .future-dates-main .future-date-navbar {
+    margin: auto;
+  }
+  .future-dates-main .future-date-navbar .LeSociety-Icon-White {
+    margin-top: 2rem;
+    padding: 0px;
+  }
+  .future-dates-main .future-header-main {
+    margin: 0 auto;
+  }
+  .future-dates-main .future-header-main .futuredate-header .heading-title {
+    color: "#fff";
+    font-size: 18px;
+    letter-spacing: 0.02px;
+    line-height: normal;
+  }
+  .future-dates-main .future-header-main .futuredate-header .futureDatingContent {
+    width: 365px !important;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.16;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    padding: 30px 24px;
+  }
+  .future-dates-main .future-main-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .future-dates-main .future-main-content .main-content-headig-1 h3 {
+    width: 348px;
+    padding: 0px 21px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    margin: 5rem auto 1rem auto;
+  }
+  .future-dates-main .future-main-content .main-content-headig-1 h3 span {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .future-dates-main .future-main-content .main-content-headig-1 p {
+    margin: 2rem auto;
+    width: 348px;
+    padding: 0 28px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.16;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+  .future-dates-main .future-main-content .main-content-image-text .main-content-headig-2 .main-imagefuture {
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 22px;
+    border: 2px solid #cbfaff;
+    padding: 20px 0px;
+    margin: auto;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    opacity: 0.5;
+  }
+  .test {
+    font-size: 18px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .future-dates-main .future-date-navbar {
+    margin: auto;
+  }
+  .future-dates-main .future-date-navbar .LeSociety-Icon-White {
+    margin: 2rem auto 0 auto;
+    padding: 0px;
+  }
+  .future-dates-main .future-header-main {
+    margin: 0 auto;
+  }
+  .future-dates-main .future-header-main .futuredate-header .heading-title {
+    color: "#fff";
+    font-size: 18px;
+    letter-spacing: 0.02px;
+    line-height: normal;
+  }
+  .future-dates-main .future-header-main .futuredate-header .futureDatingContent {
+    width: 352px !important;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.16;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    padding: 30px 24px;
+  }
+  .future-dates-main .future-main-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .future-dates-main .future-main-content .main-content-headig-1 h3 {
+    width: 340px;
+    padding: 0px 21px;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    margin: 3rem auto 1rem auto;
+  }
+  .future-dates-main .future-main-content .main-content-headig-1 h3 span {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .future-dates-main .future-main-content .main-content-headig-1 p {
+    margin: 1rem auto;
+    width: 336px;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.16;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+  .future-dates-main .future-main-content .main-content-image-text .main-content-headig-2 .main-imagefuture {
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 22px;
+    border: 2px solid #cbfaff;
+    padding: 20px 0px;
+    margin: auto;
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+    opacity: 0.5;
+  }
+  .test {
+    font-size: 18px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+.future-dates-main button {
+  height: 44px;
+  background: #F24462 0% 0% no-repeat padding-box;
+  border: #F24462;
+  color: #fff;
+  border-radius: 15px;
+  opacity: 1;
+}
+.future-dates-main .backtoHomepage-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 328px;
+  margin: 5rem auto;
+}
+
+@media only screen and (max-width: 768) {
+  .future-dates-main button {
+    height: 44px;
+    background: #F24462 0% 0% no-repeat padding-box;
+    border: #F24462;
+    color: #fff;
+    border-radius: 15px;
+    opacity: 1;
+  }
+  .future-dates-main .backtoHomepage-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 328px;
+    margin: 3rem auto !important;
+  }
+}/*# sourceMappingURL=future-date.css.map */

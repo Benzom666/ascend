@@ -1,0 +1,29 @@
+pipelines:
+  branches:
+    production:
+      - step:
+          name: Deploy to Production
+          deployment: Production
+          clone:
+            enabled: false
+          script:
+            - pipe: atlassian/ssh-run:0.4.1
+              variables:
+                SSH_USER: $SSH_USER
+                SERVER: $SERVER
+                COMMAND: |
+                  source ~/.nvm/nvm.sh
+                  nvm use
+                  cd /var/www/html/s_admin
+                  git pull origin production
+                  npm install --force
+                  npm run build
+                  if test -f "build/index.html"; then
+                    echo "exist"
+                    rm -rf build_live
+                    cp htaccess build/.htaccess
+                    mv build build_live
+                  else
+                    echo "not working"
+                  fi
+                  echo "Admin Production Deployed"

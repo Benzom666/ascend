@@ -1,0 +1,295 @@
+.footer__content {
+  background-color: #fff;
+  width: 100%;
+  color: #000000;
+}
+
+.footer_content_header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+}
+
+.footer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px 40px 140px;
+}
+.footer__header .LeSociety-Icon-Black .ls-logo {
+  width: 21px;
+  margin: 30px 20px;
+}
+.footer__header .LeSociety-Icon-Black .ls-text {
+  width: 229px;
+  padding: 15px 0px;
+  color: #fff;
+  margin-left: 9px;
+  margin-top: 19px;
+}
+.footer__header .LeSociety-Icon-Black .ls-text .leSocitey-heading {
+  margin-bottom: 2rem;
+}
+.footer__header .LeSociety-Icon-Black .ls-text .leSocitey-subheading {
+  font-size: 13px;
+  padding-top: 5px;
+  font-family: "Montserrat";
+}
+.footer__header .login__button {
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  padding: 13px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 30px;
+}
+.footer__header .home__button {
+  border-radius: 15px;
+  background: #f24462;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  padding: 13px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  color: #ffffff;
+}
+
+.content__wrapper {
+  padding: 20px 200px;
+  font-family: Montserrat;
+}
+.content__wrapper .content__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content__wrapper .content__header h3 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.content__wrapper .content__header span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.content__wrapper .content__text {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000;
+}
+.content__wrapper .content__text .text__starter {
+  margin-bottom: 20px;
+}
+.content__wrapper .content__text .text__red {
+  color: #f24462;
+}
+.content__wrapper .content__text .content__paragraph {
+  margin-bottom: 20px;
+}
+.content__wrapper .content__text .content__paragraph .paragraph__heading {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+.content__wrapper .content__text .content__paragraph ul {
+  list-style: disc !important;
+  padding-left: 20px;
+}
+
+.safety__content__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: Montserrat;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.safety__content__text ol {
+  list-style: decimal !important;
+  margin-left: 20px;
+}
+.safety__content__text ol li {
+  margin-bottom: 20px;
+}
+
+.safety__tips__content {
+  padding: 20px 250px !important;
+}
+
+.safety__content__p {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.footer__scroll__icon {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 30%;
+  right: 5%;
+  border-radius: 50%;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.privacy__policies__cookies {
+  margin-top: 20px;
+}
+
+.faq__photo__guide {
+  margin-bottom: 20px;
+}
+
+.faq__content__paragraph {
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+.faq__content__paragraph .faq__paragraph__heading {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 20px;
+}
+.faq__content__paragraph ul {
+  list-style: disc !important;
+  padding-left: 20px;
+}
+.faq__content__paragraph ul li {
+  font-size: 14px !important;
+}
+
+.our__story__content__header {
+  color: #000;
+  text-align: center;
+  font-family: Pacifico;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.our__story__content {
+  padding: 20px 320px !important;
+}
+
+.our__story__content__text > p {
+  color: #000;
+  text-align: center;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+.our__story__p__font__bold {
+  font-weight: 700 !important;
+  margin-bottom: 200px !important;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer__header {
+    padding: 20px 80px 40px 80px;
+  }
+  .footer__header .LeSociety-Icon-Black .ls-logo {
+    margin-left: 0px;
+  }
+  .our__story__content {
+    padding: 20px 100px !important;
+  }
+  .content__wrapper {
+    padding: 20px 80px;
+  }
+  .safety__tips__content {
+    padding: 20px 80px !important;
+  }
+}
+@media (max-width: 768px) {
+  .footer__header {
+    padding: 0px 30px 20px 30px;
+  }
+  .footer__header .LeSociety-Icon-Black .ls-logo {
+    margin-left: 0px;
+  }
+  .footer__header .login__button {
+    margin-right: 20px;
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+  .footer__header .home__button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  .content__wrapper {
+    padding: 20px 40px;
+  }
+  .our__story__content {
+    padding: 20px 40px !important;
+  }
+  .content__header h3 {
+    font-size: 28px !important;
+  }
+  .our__story__content__header {
+    font-size: 28px;
+  }
+  .safety__content__text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .safety__tips__content {
+    padding: 20px 40px !important;
+  }
+  .footer__scroll__icon {
+    bottom: 5%;
+  }
+  .faq__content__paragraph {
+    font-size: 14px;
+  }
+  .faq__content__paragraph .faq__paragraph__heading {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 18px;
+  }
+  .faq__content__paragraph ul {
+    list-style: disc !important;
+    padding-left: 20px;
+  }
+  .faq__content__paragraph ul li {
+    font-size: 12px !important;
+  }
+  .our__story__content__text > p {
+    font-size: 16px !important;
+    margin-bottom: 10px;
+  }
+  .footer__scroll__icon {
+    height: 50px;
+    width: 50px;
+  }
+}/*# sourceMappingURL=footer-pages.css.map */

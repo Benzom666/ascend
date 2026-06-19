@@ -1,0 +1,22 @@
+pipelines:
+  branches:
+    production:
+      - step:
+          name: Deploy to Production
+          deployment: Production
+          clone:
+            enabled: false
+          script:
+            - pipe: atlassian/ssh-run:0.4.1
+              variables:
+                SSH_USER: $SSH_USER
+                SERVER: $SERVER
+                COMMAND: |
+                  source ~/.nvm/nvm.sh
+                  nvm use
+                  cd /home/node/secret-time-next
+                  git pull origin production
+                  npm install --force
+                  npm run build
+                  npx pm2 restart 0
+                  echo "NextJS Productin Deployed"

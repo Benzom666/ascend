@@ -1,0 +1,243 @@
+header {
+  nav {
+    ul {
+      li {
+        margin-left: 30px;
+
+        a,
+        button {
+          color: $white-color;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 300;
+          letter-spacing: 1px;
+        }
+
+        button {
+          background: transparent;
+          border: none;
+          outline: none;
+
+          &.message_link {
+            position: relative;
+
+            & > span {
+              margin-right: 8px;
+              position: relative;
+              bottom: 1px;
+            }
+
+            .message-icon-spinner {
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              border: 2px solid rgba(255, 255, 255, 0.3);
+              border-top-color: #fff;
+              border-radius: 50%;
+              animation: msg-icon-spin 0.6s linear infinite;
+            }
+
+            @keyframes msg-icon-spin {
+              to { transform: rotate(360deg); }
+            }
+
+            .top-bages {
+              position: absolute;
+              min-width: 9px;
+              height: 8px;
+              line-height: 10px;
+              border-radius: 50%;
+              background: $primary-color;
+              font-size: 7px;
+              font-weight: 600;
+              top: 0;
+              margin-top: -2px;
+              left: 20px;
+              letter-spacing: 0;
+              padding: 2px;
+              margin-right: 0;
+              bottom: initial;
+            }
+          }
+        }
+
+        .user-profile-details {
+          figure {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            padding-right: 15px;
+            cursor: pointer;
+
+            & > div {
+              top: 3px;
+            }
+
+            img {
+              border-radius: 50%;
+              object-fit: cover;
+            }
+
+            @media only screen and (min-width: 767px) {
+              &::before,
+              &::after {
+                position: absolute;
+                left: calc(100% - 4px);
+                top: calc(50% - 4px);
+                height: 6px;
+                width: 2px;
+                background: $white-color;
+                content: "";
+                transform: rotate(45deg);
+                pointer-events: none;
+                cursor: pointer;
+              }
+
+              &::after {
+                left: calc(100% - 7.5px);
+                transform: rotate(-45deg);
+              }
+            }
+          }
+        }
+
+        @media only screen and (max-width: 767px) {
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .sidebar-nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 400px;
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+      background: rgba(0, 0, 0, 0.98);
+      z-index: 991;
+      opacity: 0;
+      pointer-events: none;
+      right: 0;
+      transform: translate3d(100%, 0, 0);
+      transition: opacity 220ms ease, transform 220ms ease;
+      will-change: transform, opacity;
+
+      // @media only screen and (max-width:767px){
+      //     height: 100%;
+      // }
+      &::before {
+        position: fixed;
+        background: rgba($color: #000000, $alpha: 0.6);
+        content: "";
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        right: calc(0% + 400px);
+        top: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 220ms ease;
+      }
+
+      &.open_nav_menu {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        pointer-events: auto;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+
+      @media only screen and (max-width: 767px) {
+        width: 300px;
+
+        &:before {
+          right: calc(0% + 300px);
+        }
+      }
+    }
+
+    .sidebar-backdrop {
+      position: fixed;
+      inset: 0;
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      background: rgba(0, 0, 0, 0.55);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      z-index: 990;
+      cursor: default;
+      touch-action: none;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    display: none;
+
+    &.loggedin_user {
+      display: block;
+    }
+  }
+
+  .st-logo {
+    font-family: "Conv_Helvetica";
+    font-style: normal;
+    font-weight: 700;
+
+    @media only screen and (max-width: 767px) {
+      margin-left: 14px;
+      font-size: 25px;
+    }
+  }
+
+  .header-back-button {
+    background: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.inner-page {
+  header {
+    border-bottom: 0.7px solid #4f4e54;
+
+    @media only screen and (max-width: 767px) {
+      border-bottom: 0 !important;
+    }
+  }
+}
+
+.user_notification {
+  // position: relative;
+  .top-bages {
+    position: absolute;
+    min-width: 9px;
+    height: 8px;
+    line-height: 10px;
+    border-radius: 50%;
+    background: $primary-color;
+    font-size: 7px;
+    font-weight: 600;
+    top: 0;
+    margin-top: -2px;
+    left: 20px;
+    letter-spacing: 0;
+    padding: 2px;
+    margin-right: 0;
+    bottom: initial;
+  }
+}

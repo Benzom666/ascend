@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="451.404" height="823.37" viewBox="0 0 451.404 823.37">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.848" y1="0.2" x2="0.195" y2="0.65" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f24462"/>
+      <stop offset="1" stop-color="#2a616a"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.871" y1="0.897" x2="0.105" y2="0.1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f24462"/>
+      <stop offset="1" stop-color="#db9000"/>
+    </linearGradient>
+  </defs>
+  <g id="Third_Blob" data-name="Third Blob" transform="translate(-675.417 -2129.896)">
+    <path id="Ellipse_5" data-name="Ellipse 5" d="M70.582,0a70.454,70.454,0,0,1,70.582,70.326c0,38.84-3.483,156.011-42.464,156.011S-75.954,81.3-75.954,42.46,31.6,0,70.582,0Z" transform="translate(985.658 2129.896)" fill="url(#linear-gradient)"/>
+    <path id="Ellipse_5-2" data-name="Ellipse 5" d="M15.936-49.712c69.081,0,234.228,105.6,234.228,174.538s-56,124.826-125.082,124.826S35.927,193.765,35.927,124.826-53.145-49.712,15.936-49.712Z" transform="translate(685.739 2703.614)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

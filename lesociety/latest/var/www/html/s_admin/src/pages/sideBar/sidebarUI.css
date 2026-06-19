@@ -1,0 +1,66 @@
+/*---------------------------sidebarUi--------------------------*/
+.sideBarUI {
+  width: 202px;
+  background-color: #222326;
+}
+
+.sideBarUI_header {
+  padding: 60px 30px;
+}
+
+.sideBarUI_header img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sideBarUI_header .btn-close {
+  display: none;
+}
+
+.sideBarUI_body {
+  padding: 0;
+}
+
+.sideBarUI_body .nav-link {
+  padding: 0 31px;
+  font-family: "Gilroy-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: left;
+}
+
+.sideBarUI_body .nav-link:hover, .sideBarUI_body .nav-link.active, .sideBarUI_body .nav-link:focus, .sideBarUI_body .nav-link:focus-visible {
+  font-family: "Gilroy-Bold", sans-serif;
+  color: #f24462 !important;
+}
+
+.sideBarUI_body .nav-link:hover svg path, .sideBarUI_body .nav-link.active svg path, .sideBarUI_body .nav-link:focus svg path, .sideBarUI_body .nav-link:focus-visible svg path {
+  fill: #f24462;
+}
+
+.sideBarUI_body .nav-link:hover svg.promoIcon path, .sideBarUI_body .nav-link.active svg.promoIcon path, .sideBarUI_body .nav-link:focus svg.promoIcon path, .sideBarUI_body .nav-link:focus-visible svg.promoIcon path {
+  fill: transparent;
+  stroke: #f24462;
+}
+
+.sideBarUI_body .nav-link svg {
+  margin-right: 15px;
+  height: 22px;
+}
+
+.sideBarUI_body .nav-link svg path {
+  fill: #fff;
+}
+
+.sideBarUI_body .nav-link svg.promoIcon path {
+  fill: transparent;
+  stroke: #fff;
+}
+/*# sourceMappingURL=sidebarUI.css.map */

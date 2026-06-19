@@ -1,0 +1,56 @@
+@import "./variable.scss";
+@import "./global.scss";
+@import "./header.scss";
+@import "./main.scss";
+@import "./footer.scss";
+@import "./shuklamain.scss";
+@import "./how-it-works.scss";
+@import "./home-page.scss";
+@import "locationModalPopUp.css";
+@import "./future-date.scss";
+@import "./HomePagePopUp.scss";
+@import "./footer-pages.scss";
+@import "./image-warning-popup.scss";
+@import "./RangerSlider.scss";
+@import "./gallery-create-date-dropdown.scss";
+@import "./super-interested.scss";
+@import "./new-home-page.scss";
+
+// Women's Sidebar Navigation Menu Styles
+.sidebar_nav_links_women {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li {
+      border-bottom: 1px solid #2a2a2a;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      a {
+        padding: 16px 20px;
+        color: #d1d5db;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: background-color 0.2s ease;
+        font-size: 16px;
+        
+        &:hover {
+          background-color: #1a1a1a;
+          color: white;
+        }
+        
+        span {
+          display: flex;
+          align-items: center;
+          font-family: 'Helvetica', 'Arial', sans-serif;
+        }
+      }
+    }
+  }
+}

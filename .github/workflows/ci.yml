@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          
+      - name: Install Backend Dependencies
+        working-directory: lesociety/latest/home/node/secret-time-next-api
+        run: npm ci
+        
+      - name: Install Frontend Dependencies
+        working-directory: lesociety/latest/home/node/secret-time-next
+        run: npm ci
+        
+      - name: Lint Backend
+        working-directory: lesociety/latest/home/node/secret-time-next-api
+        run: npm run lint || echo "No lint script"
+        
+      - name: Lint Frontend
+        working-directory: lesociety/latest/home/node/secret-time-next
+        run: npm run lint || echo "No lint script"
+        
+      - name: Build Frontend
+        working-directory: lesociety/latest/home/node/secret-time-next
+        run: npm run build

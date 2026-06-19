@@ -1,0 +1,29 @@
+{
+  "name": "v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "restore-db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benzom666/v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Benzom666/v2/issues"
+  },
+  "homepage": "https://github.com/Benzom666/v2#readme",
+  "dependencies": {
+    "bson": "^7.1.1",
+    "dotenv": "^17.2.4",
+    "mongodb": "^7.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}

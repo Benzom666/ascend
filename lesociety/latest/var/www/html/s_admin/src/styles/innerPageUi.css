@@ -1,0 +1,544 @@
+/*------------------inner page--------------------------*/
+.inner-page {
+  margin-left: auto;
+  margin-right: 0;
+  width: calc(100% - 204px);
+  padding: 0 60px 60px;
+  height: 100vh;
+  overflow: auto;
+}
+
+@media (max-width: 1440px) {
+  .inner-page {
+    padding: 0 30px 30px;
+  }
+}
+
+.inner-page .pageHeaderBox {
+  padding: 40px 0;
+}
+
+.inner-page .pageHeaderBox .pageTitle {
+  font-family: 'Gilroy-Bold';
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #CACACA;
+}
+
+.inner-page .pageHeaderBox .profileDropDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inner-page .pageHeaderBox .profileDropDown .dropdown-toggle {
+  font-family: 'Gilroy-Medium';
+  font-size: 20px;
+  line-height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px 0 0;
+  background: transparent;
+  border: none;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.inner-page .pageHeaderBox .profileDropDown .dropdown-toggle::after {
+  margin-right: 10px;
+}
+
+.inner-page .pageHeaderBox .profileDropDown .dropdown-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media (max-width: 1280px) {
+  .inner-page .pageHeaderBox .profileDropDown .dropdown-toggle {
+    font-size: 16px;
+  }
+}
+
+.inner-page .pageHeaderBox .profileDropDown img {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #EBEBEB;
+  border-radius: 35px;
+}
+
+.inner-page.userProfile-page {
+  background: #000;
+  position: relative;
+}
+
+.inner-page.userProfile-page::before {
+  content: '';
+  background: #2E2F34;
+  width: 100%;
+  height: 255px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.inner-page.userProfile-page > div {
+  z-index: 1;
+  position: relative;
+}
+
+.inner-page.userProfile-page .userProfileDetail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.inner-page.userProfile-page .userProfileDetail .userProfileName {
+  background: transparent;
+  color: #fff;
+  border: none;
+  text-align: left;
+  padding-left: 22px;
+}
+
+.inner-page.userProfile-page .userProfileDetail .userProfileName .card-title {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 33px;
+  letter-spacing: 0.638033px;
+  color: #FFF;
+  margin-bottom: 6px;
+}
+
+.inner-page.userProfile-page .userProfileDetail .userProfileName .card-subtitle {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.638033px;
+  color: #B2B2B3;
+}
+
+.inner-page.userProfile-page .userProfileDetail .userProfilebtn {
+  margin-left: auto;
+  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.inner-page.userProfile-page .userProfileDetail .userProfilebtn .btn {
+  height: 42px;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.0893246px;
+  text-transform: capitalize;
+  color: #FFF;
+  margin-right: 16px;
+  min-width: 100px;
+}
+
+.inner-page.userProfile-page .userProfileDetail .userProfilebtn .requestBtn {
+  border: 1px solid #FFF;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.inner-page.userProfile-page .userProfileDetail .userProfilebtn .verifyBtn {
+  background: #F24462;
+  border-radius: 8px;
+  border-color: #F24462;
+  padding: 3px 25px;
+}
+
+.inner-page.userProfile-page .userProfileDetail .userProfilebtn .dropdown .dropdown-toggle {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 26px;
+  line-height: normal;
+  min-width: auto;
+}
+
+.inner-page.userProfile-page .userProfileDetail .userProfilebtn .dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.inner-page.userProfile-page .userProfileDetail .userProfilebtn .dropdown .dropdown-toggle:focus, .inner-page.userProfile-page .userProfileDetail .userProfilebtn .dropdown .dropdown-toggle:focus-visible {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.inner-page.userProfile-page .userProfileDetail .userProfilebtn .dropdown .dropdown-toggle svg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.inner-page.userProfile-page .profileCardBox {
+  background: #222326;
+  border: 1px solid #4D4D4D;
+  border-radius: 13px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.inner-page.userProfile-page .profileCardBox .card-body {
+  padding: 0;
+  text-align: left;
+}
+
+.inner-page.userProfile-page .profileCardBox .card-body .card-title {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.106339px;
+  color: rgba(255, 255, 255, 0.39);
+  margin-bottom: 1rem;
+}
+
+.inner-page.userProfile-page .profileCardBox .card-body .card-text {
+  font-family: 'Helvetica-Light';
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+  color: #FFF;
+}
+
+.inner-page.userProfile-page .profileCardBox .userPersonalDetail {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.inner-page.userProfile-page .profileCardBox .userPersonalDetail .list-group-item {
+  background: #151515;
+  border-radius: 6px;
+  border: 1px solid #4D4D4D;
+  padding: 9px 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 10px;
+}
+
+@media (max-width: 1440px) {
+  .inner-page.userProfile-page .profileCardBox .userPersonalDetail .list-group-item {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+  }
+}
+
+.inner-page.userProfile-page .profileCardBox .userPersonalDetail .list-group-item:last-child {
+  margin: 0;
+}
+
+.inner-page.userProfile-page .profileCardBox .userPersonalDetail .list-group-item h6 {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.0098px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.0583743px;
+  color: #FFF;
+  margin-bottom: 5px;
+}
+
+.inner-page.userProfile-page .profileCardBox .userPersonalDetail .list-group-item p {
+  font-family: "Helvetica-Bold";
+  font-style: normal;
+  font-size: 9.80689px;
+  line-height: 11px;
+  text-align: center;
+  letter-spacing: 0.040862px;
+  color: #4F4E54;
+}
+
+.inner-page.userProfile-page .profileCardBox .userOfficalDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.inner-page.userProfile-page .profileCardBox .userOfficalDetails .list-group-item {
+  background: transparent;
+  padding: 25px 0;
+  border-color: rgba(60, 71, 82, 0.4);
+}
+
+.inner-page.userProfile-page .profileCardBox .userOfficalDetails .list-group-item h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.0583743px;
+  color: #FFF;
+}
+
+.inner-page.userProfile-page .profileCardBox .userOfficalDetails .list-group-item h6 span {
+  color: #B2B2B3;
+}
+
+.inner-page.userProfile-page .profileCardBox .userOfficalDetails .list-group-item h6 a {
+  color: #F24462;
+}
+
+.inner-page.userProfile-page .profileCardBox .userOfficalDetails .list-group-item:last-child {
+  border: none;
+}
+
+.card.gridCard {
+  background: #222326;
+  border: 1px solid #4D4D4D;
+  border-radius: 13px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.card.gridCard .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  border: none;
+  margin-bottom: 25px;
+}
+
+.card.gridCard .card-header .card-title {
+  font-family: 'Gilroy-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1px;
+  color: #CACACA;
+}
+
+.card.gridCard .card-header .dropdown-toggle {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 26px;
+  line-height: normal;
+}
+
+.card.gridCard .card-header .dropdown-toggle::after {
+  display: none;
+}
+
+.card.gridCard .card-header .dropdown-toggle:focus, .card.gridCard .card-header .dropdown-toggle:focus-visible {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+.card.gridCard .card-header .graphFilter .dropdown-toggle {
+  font-size: 12px;
+  line-height: 14px;
+  font-family: 'Gilroy-Regular';
+}
+
+.card.gridCard .card-header .graphFilter .dropdown-toggle::after {
+  content: "";
+  display: inline-block;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-color: #CACACA;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  height: 9px;
+  left: 0;
+  top: 0;
+  width: 9px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: 10px;
+}
+
+.card.gridCard .card-header .card-link {
+  font-family: 'Gilroy-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #CACACA;
+  margin-bottom: 0;
+  margin: 0 20px 0 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card.gridCard .card-header .card-link:nth-child(2) {
+  margin: 0 0 0 auto;
+}
+
+.card.gridCard .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  border: none;
+}
+
+.card.gridCard .card-body .card-subtitle, .card.gridCard .card-body .card-text {
+  font-family: "Gilroy-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #CACACA;
+}
+
+.card.gridCard .card-body .card-text {
+  color: #979797;
+}
+
+.card.gridCard .card-body .card-text img {
+  margin-left: 10px;
+}
+
+.card.gridCard .card-body .progressBarBox h6 {
+  font-family: 'Gilroy-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #CACACA;
+  margin-bottom: 8px;
+}
+
+.card.gridCard .card-body .progressBarBox h6 span {
+  font-family: "Gilroy-Medium";
+  color: #979797;
+}
+
+.card.gridCard .card-body .progressBarBox .progress {
+  background: #4D4D4D;
+  border-radius: 9px;
+  height: 10px;
+}
+
+.card.gridCard .card-body .progressBarBox .progress .progress-bar {
+  border-radius: 6px;
+  background: #7F7FD5;
+}
+
+.userProfileImage {
+  width: 175px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.userProfileImage img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.userProfileImage img:first-child {
+  width: 100%;
+  height: 100%;
+  max-height: 175px;
+  margin-bottom: 12px;
+  height: 175px;
+}
+/*# sourceMappingURL=innerPageUi.css.map */

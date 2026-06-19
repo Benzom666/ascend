@@ -1,0 +1,54 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [ main ]
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Use Node.js 18.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.x
+
+    - name: Install dependencies
+      working-directory: lesociety/latest/home/node/secret-time-next-api
+      run: npm ci
+
+    - name: Run tests
+      working-directory: lesociety/latest/home/node/secret-time-next-api
+      run: npm run test:ci
+      env:
+        NODE_ENV: test
+
+    - name: Build (if applicable)
+      working-directory: lesociety/latest/home/node/secret-time-next-api
+      run: npm run build --if-present
+
+    - name: Deploy to Production
+      run: |
+        echo "Deployment step - configure for your hosting provider"
+        # Example for Render, Railway, Heroku, etc.
+        # git push production main
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+
+    - name: Notify deployment
+      if: success()
+      run: |
+        echo "✅ Deployment successful"
+        # Add Slack/Discord notification here if needed
+
+    - name: Rollback on failure
+      if: failure()
+      run: |
+        echo "❌ Deployment failed - initiating rollback"
+        # Add rollback logic here

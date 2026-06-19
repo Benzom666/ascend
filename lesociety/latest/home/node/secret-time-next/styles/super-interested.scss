@@ -1,0 +1,118 @@
+.super__interested__star {
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 30px;
+  border: 1px solid #d8d8d8;
+  background: #1e2023;
+  width: fit-content;
+  margin-bottom: 20px !important;
+
+  &.active {
+    border-radius: 30px;
+    border: 1px solid #f24462;
+    background: #151515;
+  }
+}
+
+.is__super__interested__message__input {
+  padding-left: 45px !important;
+  padding-right: 65px !important;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.message__modal__input {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 65px !important;
+  padding-left: 20px;
+}
+
+.user__detail__star {
+  display: flex;
+  align-items: end;
+
+  .super__interested__username {
+    margin-left: 5px;
+  }
+
+  span {
+    color: white !important;
+
+    font-size: 15px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.058px;
+  }
+}
+
+.request__message__super__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 87px;
+  margin-top: 0;
+  margin-bottom: 6px;
+
+  .super {
+    margin-top: 10px;
+    margin-bottom: -15px;
+  }
+}
+
+.request__message__super__label {
+  display: block;
+  width: min(304px, 92vw) !important;
+  height: auto !important;
+}
+
+.request__figure--super {
+  margin-top: -11px;
+}
+
+.superinterested__icon__div {
+  position: relative;
+  margin-top: 18px;
+
+  .superinterested__icon {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    img {
+      display: block !important;
+      width: 58px !important;
+      height: 58px !important;
+    }
+  }
+}
+
+// Request page variant (star rendered directly above figure, without wrapper)
+.superinterested__icon {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -46px;
+
+  img {
+    display: block !important;
+    width: 58px !important;
+    height: 58px !important;
+  }
+}
+
+.superinterested__margin {
+  margin-top: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .super__interested__star {
+    margin-bottom: 10px !important;
+  }
+}

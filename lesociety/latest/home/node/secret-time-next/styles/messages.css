@@ -1,0 +1,344 @@
+/*# sourceMappingURL=messages.css.map *//* Inbox Section Title */
+.inbox-section-title {
+  font-family: "Conv_Helvetica", "Helvetica", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #888888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 16px 20px;
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================================
+   COMPREHENSIVE RING STYLING - PC & MOBILE
+   ============================================================ */
+
+/* Ring container base styles - ensure visibility on all devices */
+.sidebar-ring,
+.token-circle-inner,
+.InterestRing {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Ring image visibility - force display on all views */
+.sidebar-ring img,
+.token-circle-inner img,
+.InterestRing img {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  top: 0 !important;
+  left: 0 !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+}
+
+/* Ring value/number centering */
+.sidebar-ring-value,
+.token-value,
+.ring-value {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: auto !important;
+  transform: none !important;
+  z-index: 10 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: "Conv_Helvetica", "Helvetica", Arial, sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  line-height: 1;
+}
+
+/* Specific size adjustments */
+.sidebar-ring {
+  width: 100px !important;
+  height: 100px !important;
+  flex-shrink: 0;
+}
+
+.token-circle-inner {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.InterestRing {
+  width: 100px !important;
+  height: 100px !important;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   MOBILE SPECIFIC FIXES
+   ============================================================ */
+@media (max-width: 767px) {
+  /* Ensure rings remain visible and centered on mobile */
+  .sidebar-ring,
+  .token-circle-inner,
+  .InterestRing {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .sidebar-ring img,
+  .token-circle-inner img,
+  .InterestRing img {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  /* Adjust sizes for smaller mobile screens if needed */
+  .sidebar-ring,
+  .token-circle-inner,
+  .InterestRing {
+    width: 90px !important;
+    height: 90px !important;
+  }
+
+  /* Adjust font sizes for mobile */
+  .sidebar-ring-value,
+  .token-value,
+  .ring-value {
+    font-size: 22px !important;
+  }
+}
+
+/* ============================================================
+   PC DESKTOP SPECIFIC FIXES
+   ============================================================ */
+@media (min-width: 768px) {
+  /* Ensure proper sizing on desktop */
+  .sidebar-ring {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .token-circle-inner {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .InterestRing {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  /* Desktop font sizes */
+  .sidebar-ring-value {
+    font-size: 28px !important;
+  }
+
+  .token-value {
+    font-size: 28px !important;
+  }
+
+  .ring-value {
+    font-size: 26px !important;
+  }
+}
+
+/* ============================================================
+   FALLBACK FOR BROWSER COMPATIBILITY
+   ============================================================ */
+
+/* Support for older browsers */
+@supports not (display: flex) {
+  .sidebar-ring,
+  .token-circle-inner,
+  .InterestRing {
+    display: block !important;
+    position: relative !important;
+  }
+
+  .sidebar-ring img,
+  .token-circle-inner img,
+  .InterestRing img {
+    display: block !important;
+  }
+
+  .sidebar-ring-value,
+  .token-value,
+  .ring-value {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+}
+
+/* Active Conversations Header - Text above the line */
+.active-conversations-header {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.active-conversations-header h3 {
+  font-family: "Conv_Helvetica", "Helvetica", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #888888;
+  text-transform: none;
+  letter-spacing: 1px;
+  margin: 0 0 8px 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Small inbox row alignment nudge */
+.message .message_sidebar_wrap .react-tabs__tab-panel .user-list-wrap ul li figure.user_img_header {
+  position: relative;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  margin: 0 10px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message .message_sidebar_wrap .react-tabs__tab-panel .user-list-wrap ul li figure.user_img_header img {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Empty inbox state should sit higher; list area remains the only scroller */
+.message .message_sidebar_wrap .react-tabs__tab-panel .user-list-wrap .message-content-side {
+  min-height: auto !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  padding-top: 12px;
+}
+
+.message .message_sidebar_wrap .react-tabs__tab-panel .user-list-wrap .message-content-side > div,
+.message .message_sidebar_wrap .react-tabs__tab-panel .user-list-wrap .message-content-side > section {
+  width: 100%;
+}
+
+/* Hide only the tabs, not the entire TabList */
+.message_sidebar_wrap .react-tabs__tab {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Remove top border from tab panel since tab list is hidden */
+.message_sidebar_wrap .react-tabs__tab-panel {
+  border-top: none !important;
+  padding-top: 0 !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+}
+
+.message .message_sidebar_wrap .react-tabs {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.message .message_sidebar_wrap .react-tabs__tab-panel .user-list-wrap {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* On mobile, ensure content fits without requiring scroll */
+@media screen and (max-width: 767px) {
+  .message .message_sidebar_wrap .react-tabs__tab-panel .user-list-wrap {
+    overflow-y: auto;
+    max-height: calc(100vh - 140px);
+  }
+  
+  /* When content fits, no scroll needed */
+  .message .message_sidebar_wrap .react-tabs__tab-panel .user-list-wrap.content-fits {
+    overflow-y: hidden;
+  }
+}
+
+/* Show INBOX at top for desktop only */
+@media (min-width: 768px) {
+  .message_sidebar_wrap .react-tabs__tab-list {
+    padding: 16px 20px 12px;
+    margin: 0;
+    border-bottom: none;
+    text-align: center;
+    background: transparent;
+  }
+
+  .message_sidebar_wrap .react-tabs__tab-list::before {
+    content: 'INBOX';
+    display: block;
+    font-family: "Conv_Helvetica", "Helvetica", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+  }
+
+  /* Add red gradient line below INBOX on desktop */
+  .message_sidebar_wrap .react-tabs__tab-list::after {
+    content: '';
+    display: block;
+    width: 86px;
+    height: 2px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(250, 120, 155, 0.01) 0%, #F02D4E 50%, rgba(242, 67, 98, 0.01) 100%);
+  }
+}
+
+/* Hide TabList on mobile - MessageMobileHeader shows INBOX */
+@media (max-width: 767px) {
+  .message_sidebar_wrap .react-tabs__tab-list {
+    display: none !important;
+  }
+}
+
+/* Reduce gap between mobile header and New Interests */
+@media (max-width: 767px) {
+  .message-mobile-header {
+    margin-bottom: 0 !important;
+    padding-bottom: 8px !important;
+  }
+
+  .message .message_sidebar_wrap {
+    padding-top: 8px !important;
+  }
+  
+  .message_sidebar_wrap .react-tabs__tab-panel {
+    padding-top: 0 !important;
+  }
+
+  .message .message_sidebar_wrap,
+  .message .message_sidebar_wrap .react-tabs,
+  .message .message_sidebar_wrap .react-tabs__tab-panel {
+    height: 100%;
+    min-height: 0;
+  }
+
+  .message .message_sidebar_wrap .react-tabs__tab-panel .user-list-wrap .message-content-side {
+    padding-top: 4px;
+  }
+}

@@ -1,0 +1,65 @@
+/*---------------------------sidebarUi--------------------------*/
+.sideBarUI {
+  width: 202px;
+  height: 100vh;
+  position: fixed;
+  background-color: #222326;
+  &_header {
+    padding: 60px 30px;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+      }
+    .btn-close {
+      display: none;
+    }
+  }
+  &_body{
+    padding: 0;
+    .nav-link {
+      padding: 0 31px;
+      font-family: "Gilroy-Medium";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #fff;
+      margin-bottom: 30px;
+      width: 100%;
+      text-align: left;
+      &:hover,
+      &.active,
+      &:focus,
+      &:focus-visible {
+        font-family: "Gilroy-Bold", sans-serif;
+        color: #f24462 !important;
+        svg {
+          path {
+            fill: #f24462;
+          }
+          &.promoIcon {
+            path {
+              fill: transparent;
+              stroke: #f24462;
+            }
+          }
+        }
+      }
+      svg {
+        margin-right: 15px;
+        height: 22px;
+        path {
+          fill: #fff;
+        }
+        &.promoIcon {
+          path {
+            fill: transparent;
+            stroke: #fff;
+          }
+        }
+      }
+    }
+  }
+}

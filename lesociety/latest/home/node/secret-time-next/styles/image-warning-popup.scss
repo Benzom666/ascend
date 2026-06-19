@@ -1,0 +1,237 @@
+.image__warning__popup {
+  width: 570px;
+  background: #ffff;
+  border-radius: 30px;
+  padding: 50px 60px 40px 60px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-in-out;
+  z-index: 999;
+  color: #000;
+
+  .popup_heading {
+    text-align: center;
+    font-size: 28px !important;
+    font-weight: 700;
+    letter-spacing: 0.094px;
+  }
+
+  .popup_text {
+    text-align: center;
+    font-size: 14px !important;
+    font-weight: 300;
+    letter-spacing: 0.095px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .follow_instruction_text {
+    text-align: center;
+    font-size: 14px !important;
+    letter-spacing: 0.095px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 15.6px;
+  }
+
+  .popup__image {
+    display: flex;
+    justify-content: center;
+  }
+  .list-of-warning {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      list-style: disc;
+      list-style-position: inside;
+      padding-left: 0 !important;
+
+      li {
+        font-size: 16px !important;
+        margin: 5px 0;
+      }
+    }
+
+    .dont-show {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0 0px 0;
+
+      .dont-show-checkBox {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 1.5rem;
+        padding-left: 25px;
+        user-select: none;
+
+        input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          border: 1px solid #f24462;
+          border-radius: 8px;
+        }
+
+        .checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        input:checked ~ .checkmark:after {
+          display: block;
+        }
+
+        .checkmark:after {
+          left: 7.3px;
+          top: 4px;
+          width: 8px;
+          height: 12px;
+          border: solid #f24462;
+          border-width: 0 3px 3px 0;
+          transform: rotate(45deg);
+        }
+      }
+
+      .dont-show-text {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        color: #000;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .warning_modal_footer {
+    margin: 0rem auto;
+
+    .agree-btn {
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.056px;
+      text-transform: capitalize;
+      height: 50px;
+      width: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f24462;
+      border: #f24462;
+      color: #fff;
+      border-radius: 8px;
+      margin: 0 auto;
+      padding: 5px 40px;
+    }
+
+    .footer-text-war {
+      font-family: "Helvetica";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: #a8a8a8;
+      margin: 1rem auto;
+    }
+  }
+}
+
+.image__warning__popup.show_1 {
+  opacity: 1;
+}
+
+.image__popup__container {
+  position: fixed;
+  inset: 0px;
+  background: rgba(0, 0, 0, 0.4) !important;
+  z-index: 9999 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .image__popup__container {
+    position: fixed;
+    inset: 5px;
+    background: rgba(0, 0, 0, 0.4) !important;
+    z-index: 9999 !important;
+    overflow-y: auto !important;
+  }
+  .image__warning__popup {
+    height: auto;
+    width: 90%;
+    border-radius: 30px 30px 0 0;
+    transform: translate(-50%, 50%);
+    z-index: 999;
+    padding: 50px 15px;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    width: 100%;
+    overflow-y: auto !important;
+    border-radius: 30px;
+    height: 750px !important;
+    .popup_heading {
+      font-size: 18px !important;
+      font-weight: 900;
+    }
+
+    .popup_text {
+      color: #000;
+      text-align: center;
+
+      font-weight: 300;
+      letter-spacing: 0.095px;
+      padding-left: 40px;
+      padding-right: 40px;
+      // add break after comma
+    }
+    .warning_modal_footer {
+      .agree-btn {
+        width: 100%;
+      }
+    }
+  }
+
+  .image__warning__popup.show_1 {
+    // top: unset;
+
+    transform: translate(-50%, 0%);
+    opacity: 1;
+    // bottom: 2%;
+  }
+
+  .list-of-warning {
+    ul {
+      li {
+        font-size: 15px !important;
+      }
+    }
+  }
+}

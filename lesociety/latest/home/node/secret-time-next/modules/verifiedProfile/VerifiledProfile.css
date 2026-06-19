@@ -1,0 +1,13 @@
+.verified-profile-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.verification-logo-image {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
