@@ -8,7 +8,7 @@ const supabaseHost = process.env.NEXT_PUBLIC_SUPABASE_URL
 module.exports = {
   images: {
     domains: [
-      'xlmutqshewxuhrymzvmx.supabase.co',
+      'uopffshulmumslhgdcce.supabase.co',
       ...(supabaseHost ? [supabaseHost] : [])
     ],
   },
