@@ -88,9 +88,15 @@ const app = express();
 // ============================================
 // SECURITY FIX: CORS Configuration
 // ============================================
-const allowedOrigins = process.env.ALLOWED_ORIGINS 
+// Default allowed origins — used when ALLOWED_ORIGINS env var is not set
+const DEFAULT_ORIGINS = [
+    'https://ascend-web-ten.vercel.app',
+    'https://ascend-admin-rust.vercel.app',
+];
+
+const allowedOrigins = process.env.ALLOWED_ORIGINS
     ? process.env.ALLOWED_ORIGINS.split(',').map(o => o.trim())
-    : [];
+    : DEFAULT_ORIGINS;
 
 const corsOptions = {
     origin: function (origin, callback) {
@@ -101,44 +107,37 @@ const corsOptions = {
             if (!origin) {
                 return callback(null, true);
             }
-            
-            // Require ALLOWED_ORIGINS to be configured in production
-            if (allowedOrigins.length === 0) {
-                winstonLog.error('CRITICAL: ALLOWED_ORIGINS not configured in production mode');
-                return callback(new Error('CORS not configured'));
-            }
-            
+
             // Strict matching in production
             const isAllowed = allowedOrigins.some(allowed => origin === allowed);
-            
+
             if (isAllowed) {
                 callback(null, true);
             } else {
                 winstonLog.warn(`CORS: Blocked unauthorized origin in production: ${origin}`);
-                callback(new Error('Not allowed by CORS'));
+                // Return null (block) not an Error — Error causes a 500, null causes a proper CORS rejection
+                callback(null, false);
             }
-        } 
+        }
         // Development mode: More permissive (but still controlled)
         else {
             // Allow requests with no origin (Postman, mobile apps during dev)
             if (!origin) return callback(null, true);
-            
+
             // Allow localhost and local network IPs for development
-            if (origin.includes('localhost') || 
+            if (origin.includes('localhost') ||
                 origin.match(/^https?:\/\/(10|192\.168|127\.0\.0\.1)\.\d+\.\d+:\d+$/)) {
                 return callback(null, true);
             }
-            
+
             // Check configured origins
-            if (allowedOrigins.length > 0) {
-                const isAllowed = allowedOrigins.some(allowed => origin === allowed);
-                if (isAllowed) {
-                    return callback(null, true);
-                }
+            const isAllowed = allowedOrigins.some(allowed => origin === allowed);
+            if (isAllowed) {
+                return callback(null, true);
             }
-            
+
             winstonLog.warn(`CORS: Blocked origin in development: ${origin}`);
-            callback(new Error('Not allowed by CORS'));
+            callback(null, false);
         }
     },
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
